@@ -24,12 +24,12 @@ if ENV:
     TOKEN = os.environ.get('TOKEN', None)
 
     try:
-        OWNER_ID = int(os.environ.get('OWNER_ID', None))
+        OWNER_ID = int(os.environ.get('1529479707', None))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    OWNER_USERNAME = os.environ.get("POWER_OF_TELEGRAMX", None)
 
     try:
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
@@ -63,7 +63,7 @@ if ENV:
     PORT = int(os.environ.get('PORT', 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
 
-    DB_URI = os.environ.get('DATABASE_URL')
+    DB_URI = os.environ.get('postgres://owpmcqkt:lWW_qjJdPl5E_XGQLYcXh1XGQVCFH-7F@hansken.db.elephantsql.com:5432/owpmcqkt')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
